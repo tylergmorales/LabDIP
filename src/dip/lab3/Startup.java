@@ -15,6 +15,6 @@ public class Startup {
         Writer writer = new GUIMessageOutput();
         
         Copier copier = new Copier(reader, writer);
-        copier.copy();
+        copier.copyMessage();
     }
 }

@@ -19,8 +19,8 @@ public class Copier {
         this.writer = writer;
     }
     
-    public void copy(){
-        String line = reader.getMessage();
-        writer.outputMessage(line);
+    public void copyMessage(){
+        String message = reader.getMessage();
+        writer.outputMessage(message);
     }
 }
