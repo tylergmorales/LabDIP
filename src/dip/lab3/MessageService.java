@@ -9,11 +9,11 @@ package dip.lab3;
  *
  * @author tmorales3
  */
-public class Copier {
-    private Reader reader;
+public class MessageService {
+    private MessageReader reader;
     private Writer writer;
     
-    public Copier(Reader reader, Writer writer)
+    public MessageService(MessageReader reader, Writer writer)
     {
         this.reader = reader;
         this.writer = writer;

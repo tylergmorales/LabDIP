@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author tmorales3
  */
-public class MessageArrayInput implements Reader {
+public class ArrayMessageInput implements MessageReader {
     private String[] messages = {"Array Message 1", "Array message 2", "Array Message 3", "Array Message 4", "Array Message 5"};
     
     public String getMessage()

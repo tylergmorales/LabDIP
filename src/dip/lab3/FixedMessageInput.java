@@ -9,7 +9,7 @@ package dip.lab3;
  *
  * @author tmorales3
  */
-public class FixedMessageInput implements Reader {
+public class FixedMessageInput implements MessageReader {
     private final String MESSAGE = "Fixed Message Input";
     
     @Override

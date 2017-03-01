@@ -14,7 +14,7 @@ package dip.lab3;
  * @see     Copier.java, KeyboardReader.java and FileReader.java for dependencies
  * @see     Driver for run instructions and info about design rules
  */
-public interface Reader {
+public interface MessageReader {
 
 	// you do not need the "abstract" keyword because it is implicit
 	// just implement this interface and create your own derived class implementation

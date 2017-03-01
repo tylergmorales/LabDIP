@@ -11,10 +11,10 @@ package dip.lab3;
  */
 public class Startup {
     public static void main(String[] args) {
-        Reader reader = new MessageArrayInput();
-        Writer writer = new GUIMessageOutput();
+        MessageReader reader = new KeyboardMessageInput();
+        Writer writer = new ConsoleMessageOutput();
         
-        Copier copier = new Copier(reader, writer);
+        MessageService copier = new MessageService(reader, writer);
         copier.copyMessage();
     }
 }
