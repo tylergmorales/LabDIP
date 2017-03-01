@@ -9,10 +9,12 @@ package dip.lab3;
  *
  * @author tmorales3
  */
-public class FixedMessageInput implements Reader {
-    private final String MESSAGE = "Fixed Message Input";
-    
-    public String getMessage(){
-        return MESSAGE;
+public class ConsoleMessageOutput implements Writer {
+
+    @Override
+    public void outputMessage(String message) {
+        System.out.println(message);
     }
+    
+    
 }

@@ -9,13 +9,7 @@ package dip.lab3;
  *
  * @author tmorales3
  */
-public class ConsoleOutput {
-    private String message;
+public interface Writer {
     
-    public void outputMessage()
-    {
-        System.out.println(message);
-    }
-    
-    
+    public abstract void outputMessage(String line);
 }

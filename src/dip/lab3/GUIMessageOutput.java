@@ -5,14 +5,18 @@
  */
 package dip.lab3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author tmorales3
  */
-public class FixedMessageInput implements Reader {
-    private final String MESSAGE = "Fixed Message Input";
-    
-    public String getMessage(){
-        return MESSAGE;
+public class GUIMessageOutput implements Writer {
+
+    @Override
+    public void outputMessage(String message) {
+        JOptionPane.showMessageDialog(null, message);
     }
+    
+    
 }

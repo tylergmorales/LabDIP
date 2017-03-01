@@ -11,13 +11,15 @@ import java.util.Random;
  *
  * @author tmorales3
  */
-public class MessageArrayInput {
+public class MessageArrayInput implements Reader {
     private String[] messages = {"Array Message 1", "Array message 2", "Array Message 3"};
     
     public String getMessage()
     {
         Random rand = new Random();
-        int n = rand.nextInt(2) + 0;
+        int n;
+        do {n = rand.nextInt(3) + 0;}
+        while(n != 3);
         return messages[n];
     }
 }
