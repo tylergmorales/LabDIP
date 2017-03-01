@@ -16,6 +16,12 @@ public class KeyboardMessageInput implements MessageReader {
     
     public String getMessage()
     {
-        return keyboard.nextLine();     
+        String message = keyboard.nextLine();
+        while(message.length() == 0)
+        {
+            System.out.println("Please enter message of at least 1 character.");
+            message = keyboard.nextLine();
+        }
+        return message;     
     }
 }

@@ -14,7 +14,7 @@ public class Startup {
         MessageReader reader = new KeyboardMessageInput();
         Writer writer = new ConsoleMessageOutput();
         
-        MessageService copier = new MessageService(reader, writer);
-        copier.copyMessage();
+        MessageService messenger = new MessageService(reader, writer);
+        messenger.copyMessage();
     }
 }
