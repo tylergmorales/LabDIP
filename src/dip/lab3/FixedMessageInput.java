@@ -12,6 +12,7 @@ package dip.lab3;
 public class FixedMessageInput implements Reader {
     private final String MESSAGE = "Fixed Message Input";
     
+    @Override
     public String getMessage(){
         return MESSAGE;
     }
